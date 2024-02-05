@@ -1,0 +1,49 @@
+{
+  "name": "htmlsoap",
+  "version": "1.0.0",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "celebrate": "^14.0.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "exceljs": "^4.3.0",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.2.6",
+    "express-winston": "^4.1.0",
+    "fs": "0.0.1-security",
+    "helmet": "^4.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "mongoose": "^5.12.12",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "node-fetch": "^3.0.0",
+    "node-libcurl": "^2.3.3",
+    "node-xlsx": "^0.17.2",
+    "request": "^2.88.2",
+    "soap": "^0.42.0",
+    "tedious": "^14.0.0",
+    "validator": "^13.6.0",
+    "winston": "^3.3.3",
+    "xhr2": "^0.2.1",
+    "xlsx": "^0.17.4",
+    "xml-js": "^1.6.11",
+    "xml2js": "^0.4.23"
+  },
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint .",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

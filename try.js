@@ -40,9 +40,10 @@ const xlsx = require('xlsx');
         return [year, month, day].join('-') + ' ' + [ hour, minutes, seconds].join(':');
     }
 
-    const formatDateEnd = formatDate(end);
-    const formatDateStart = formatDate(start);
-
+    //const formatDateEnd = formatDate(end);
+    //const formatDateStart = formatDate(start);
+    const formatDateEnd = '2023-02-05 00:00:00';
+    const formatDateStart = '2023-02-05 23:59:59';
 
     console.log(formatDateEnd);
     console.log(formatDateStart);
@@ -238,7 +239,7 @@ connection.query(
 
 
 connection.query(
-    `select count(*) from cdr where calldate > '${formatDateStart}' and calldate < '${formatDateEnd}'  and disposition = ' NO ANSWER' and dst = '9995' ORDER BY calldate DESC`,
+    `select count(*) from cdr where calldate > '${formatDateStart}' and calldate < '${formatDateEnd}'  and disposition = 'ANSWERED' and dst = '9995' ORDER BY calldate DESC`,
     function(err, results) {
         console.log(results);
     }
